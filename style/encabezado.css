@@ -103,9 +103,11 @@
     transform: rotate(-45deg) translate(-4px, 2px);
 }
 
+
+
 @media (max-width: 760px) {
     
-    .menu_items{
+    .menu_items {
        position: fixed;
        top: 80px;
        bottom: 50%;
@@ -116,14 +118,12 @@
        justify-content: space-evenly;
        flex-direction: column;
        align-items: center;
-       clip-path: circle(0 at center);
+       display: none;
+       
        
     }
 
-    .bars_menu:checked + .menu_items{
-        clip-path: circle(100%  at center);
-        
-    }
+    
      
 
     .bars_menu {
@@ -131,10 +131,10 @@
         position: static;
         margin: 55px 70px 0 0;
     }
-    
+
     .click{
         display: none;
-      }
+    }
 
 }
 
@@ -154,7 +154,7 @@
         
      }
       .click{
-        display: none;
+        opacity: 0;
       }
        
      .bars_menu {
